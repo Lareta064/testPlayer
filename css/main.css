@@ -8,6 +8,7 @@ body{
 	display: flex;
 }
 .player-container{
+	margin-top: 40px;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
