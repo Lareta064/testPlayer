@@ -5,7 +5,7 @@
 .player{
 	width: 800px; 
 	height: 600px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 0 15px rgba(0,0,0,0.9);
 	display: flex;
 	flex-direction: column;
 }
@@ -21,19 +21,19 @@
 }
 
 .player-controls-btn{
-	width: 45px;
-	height: 50px;
+	width: 35px;
+	height: 40px;
 	border: none;
 	cursor:pointer;
 	transition: .3s;
 	background-color: transparent;
-	color: #fff;
-	font-size: 20px;
+	color: rgb(150, 214, 23);
+	font-size: 18px;
 	line-height: 1.5;
-	padding: 10px;
+	padding: 0;
 	text-align: center;
 }
-
+.player-controls-btn +.player-controls-btn {margin-left: 3px;}
 .player-controls-btn:last-child{
 	margin-left: auto;
 }
