@@ -13,7 +13,10 @@
 	<link rel="shortcut icon" href="./img/favicon/favicon.ico">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">	
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css">
 	<title>Video player</title>
 </head>
@@ -24,10 +27,30 @@
 			
 			<!--=============== control buttons ===================-->
 			<div class="player-controls">
-				<button class="player-controls-btn js-play-button" type="button"><i class="fa-solid fa-play"></i></button>
-				<button class="player-controls-btn js-pause-button" hidden type="button"><i class="fa-solid fa-pause"></i></button>
-				<button class="player-controls-btn js-mute-button" hidden type="button"><i class="fa-solid fa-volume-high"></i></button>
-				<button class="player-controls-btn js-volume-button" type="button"><i class="fa-solid fa-volume-xmark"></i></button>
+				<!-- left buttons -->
+				<div class="player-controls-block">
+					<button class="player-controls-btn js-play-button" type="button">
+						<i class="fa-solid fa-play"></i>
+					</button>
+					<button class="player-controls-btn js-pause-button" hidden type="button">
+						<i class="fa-solid fa-pause"></i>
+					</button>
+					<button class="player-controls-btn player-btn-mute js-mute-button" hidden type="button">
+						<i class="fa-solid fa-volume-high"></i>
+					</button>
+					<button class="player-controls-btn  js-volume-button" type="button">
+						<i class="fa-solid fa-volume-xmark"></i>
+					</button>
+				</div>
+				<!-- progress timeline -->
+				<div class="player-controls-timeline" >
+					<span class="js-current-time"></span>
+					<div class="js-progress player-progress">
+						<div class="js-progress-slider player-progress-slider" ></div>
+					</div>
+					<span class="js-duration"></span>
+				</div>
+				
 				<button class="player-controls-btn js-fullscreen-button" type="button">
 					<i class="fa-solid fa-up-right-and-down-left-from-center"></i>
 				</button>
