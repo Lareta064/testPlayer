@@ -53,12 +53,25 @@ body{
 	column-gap:10px;
 }
 .player-progress{
-	flex-grow: 2;
-
-
+	 flex-grow: 2;
+	 display: flex;
+	 align-items: center;
 }
 .player-progress-slider{
-	height: 6px;
+	height: 5px;
 	border-radius: 6px;
 	background-color: #f8104d;
+}
+.player-progress-thumb{
+	width: 14px;
+	height: 14px;
+	border-radius:50px;
+	background-color: #f8104d;
+	border: 3px solid #fff;
+	outline-offset: 1px;
+	box-sizing: border-box;
+	flex-shrink:0;
+	display: inline-block;
+	cursor:grab;
+	margin-left: -4px;
 }
