@@ -74,4 +74,7 @@ body{
 	display: inline-block;
 	cursor:grab;
 	margin-left: -4px;
+	opacity: 0;
+	transition: opacity .3s ease-in;
 }
+.player-progress:hover .player-progress-thumb{opacity: 1;}
